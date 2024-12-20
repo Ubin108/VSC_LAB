@@ -157,3 +157,62 @@ body {
   font-size: 14px;
   margin-top: 30px;
 }
+
+.team-section {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.principal-investigator, .graduate-students, .alumni {
+  margin: 20px 0;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-details {
+  margin: 10px 0;
+}
+
+.profile-links a {
+  display: inline-block;
+  margin: 5px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.profile-links a:hover {
+  text-decoration: underline;
+}
+
+.graduate-students .student {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+
+.graduate-students .student img {
+  margin-bottom: 5px;
+}
+
+.alumni {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alumni a {
+  margin: 5px 0;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.alumni a:hover {
+  text-decoration: underline;
+}

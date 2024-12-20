@@ -6,10 +6,10 @@ const App = () => {
     const [isTransitioning, setIsTransitioning] = useState(false);
 
     const images = [
-        { src: 'DiffuseHigh.jpg', alt: 'DiffuseHigh' },
-        { src: 'CodecNerf.jpg', alt: 'CodecNerf' },
-        { src: 'SequenceMatters.jpg', alt: 'SequenceMatters' },
-        { src: 'PEVC.jpg', alt: 'PEVC' },
+        { src: process.env.PUBLIC_URL + '/DiffuseHigh.jpg', alt: 'DiffuseHigh' },
+        { src: process.env.PUBLIC_URL + '/CodecNerf.jpg', alt: 'CodecNerf' },
+        { src: process.env.PUBLIC_URL + '/SequenceMatters.jpg', alt: 'SequenceMatters' },
+        { src: process.env.PUBLIC_URL + '/PEVC.jpg', alt: 'PEVC' },
     ];
 
     const extendedImages = [images[images.length - 1], ...images, images[0]]; // Add last and first image for smooth looping
@@ -55,10 +55,10 @@ const App = () => {
                 <div className="title">Visual and Scientific Computing Lab</div>
                 <div className="menu">
                     <a href="#">Home</a>
-                    <a href="#">Team</a>
-                    <a href="#">Publication</a>
-                    <a href="#">Gallery</a>
-                    <a href="#">Contact</a>
+                    <a href="https://silverbottlep.github.io/pair.html">Team</a>
+                    <a href="https://silverbottlep.github.io/publication.html">Publication</a>
+                    <a href="https://silverbottlep.github.io/pic.html">Gallery</a>
+                    <a href="https://silverbottlep.github.io/index.html">Contact</a>
                 </div>
             </nav>
 
