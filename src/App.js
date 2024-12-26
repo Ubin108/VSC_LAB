@@ -136,6 +136,20 @@ const App = () => {
                                         <button className="carousel-button next" onClick={handleNext}>
                                             <span className="arrow">&#9654;</span>
                                         </button>
+                                        <div className="carousel-indicators">
+                                            {images.map((_, index) => (
+                                                <span
+                                                    key={index}
+                                                    className={`indicator ${index + 1 === currentIndex ? 'active' : ''}`}
+                                                    onClick={() => {
+                                                        if (index + 1 !== currentIndex) {
+                                                            setIsTransitioning(true);
+                                                            setCurrentIndex(index + 1);
+                                                        }
+                                                    }}
+                                                ></span>
+                                            ))}
+                                        </div>
                                     </div>
                                 </main>
 
