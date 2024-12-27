@@ -7,6 +7,20 @@ const App = () => {
     const [currentIndex, setCurrentIndex] = useState(1); // Start at the first image in the extended array
     const [isTransitioning, setIsTransitioning] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth <= 768);
+        };
+
+        handleResize();
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
 
     const images = [
         { src: process.env.PUBLIC_URL + '/home/DiffuseHigh.jpg', alt: 'DiffuseHigh' },
@@ -95,7 +109,9 @@ const App = () => {
         <Router>
             <div className="App">
                 <nav className="navbar">
-                    <div className="title">Visual and Scientific Computing Lab</div>
+                    <div className="title">
+                        {isSmallScreen ? "VSC Lab" : "Visual and Scientific Computing Lab"}
+                    </div>
                     <div className="menu">
                         <Link to="/">Home</Link>
                         <Link to="/team">Team</Link>
