@@ -107,14 +107,14 @@ const App = () => {
     );
 
     return (
-        <Router>
+        <Router basename="/VSC_LAB">
             <div className="App">
                 <nav className="navbar"> 
                     <div className="title">
                         <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Logo" className="logo" />
-                        <a href="/" className="title-link">
+                        <Link to="/" className="title-link">
                             {isSmallScreen ? "VSC Lab" : "Visual and Scientific Computing Lab"}
-                        </a>
+                        </Link>
                     </div>
                     <div className="menu">
                         <Link to="/">Home</Link>
