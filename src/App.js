@@ -111,6 +111,7 @@ const App = () => {
             <div className="App">
                 <nav className="navbar"> 
                     <div className="title">
+                        <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Logo" className="logo" />
                         <a href="/" className="title-link">
                             {isSmallScreen ? "VSC Lab" : "Visual and Scientific Computing Lab"}
                         </a>
@@ -132,7 +133,7 @@ const App = () => {
                                 <main className="main">
                                     <div className="carousel">
                                         <button className="carousel-button prev" onClick={handlePrev}>
-                                            <span className="arrow">&#9664;</span>
+                                            <img src={process.env.PUBLIC_URL + '/left_button.png'} alt="Previous" />
                                         </button>
                                         <div
                                             className="carousel-images"
@@ -153,7 +154,7 @@ const App = () => {
                                             ))}
                                         </div>
                                         <button className="carousel-button next" onClick={handleNext}>
-                                            <span className="arrow">&#9654;</span>
+                                            <img src={process.env.PUBLIC_URL + '/right_button.png'} alt="Next" />
                                         </button>
                                         <div className="carousel-indicators">
                                             {images.map((_, index) => (

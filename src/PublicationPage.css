@@ -13,6 +13,7 @@
     margin-bottom: 40px;
     font-weight: 400;
     font-style: normal;
+    width: 100%;
 }
 
 .year-section h2 {
@@ -22,24 +23,46 @@
 
 .publication-cards {
     display: flex;
-    width: 1000px;
+    width: 100%;
     align-items: center;
     flex-direction: column;
     gap: 15px;
 }
 
 .publication-card {
+    width: 95%;
+    display: flex;
+    align-items: flex-start;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
+    padding: 10px;
     border-radius: 8px;
-    padding: 15px;
-    width: 95%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.publication-card:hover {
+.publication-card-content {
+    display: flex;
+    align-items: center;
+}
+
+.thumbnail {
+    width: 140px;
+    object-fit: contain;
+    margin-right: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.publication-details {
+    flex: 1;
+}
+
+.thumbnail:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
 
 .publication-card h3 {
@@ -79,4 +102,72 @@
 
 .links a:hover {
     color: #0056b3;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.modal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    z-index: 10;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.close:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 20px;
+    height: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }

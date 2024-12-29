@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./PublicationPage.css";
 
 const publications = [
@@ -10,7 +10,8 @@ const publications = [
         links: {
             paper: "https://arxiv.org/abs/2412.11520",
             project: "https://kuai-lab.github.io/editsplat2024/",
-            code: "Coming soon"
+            code: "Coming soon",
+            thumbs: process.env.PUBLIC_URL + '/thumb/EditSplat.jpg'
         }
     },
     { 
@@ -21,7 +22,8 @@ const publications = [
         links: {
             paper: "https://arxiv.org/abs/2412.06234",
             project: "https://stnamjef.github.io/GenerativeDensification/",
-            code: "https://github.com/stnamjef/GenerativeDensification"
+            code: "https://github.com/stnamjef/GenerativeDensification",
+            thumbs: process.env.PUBLIC_URL + '/thumb/GenerativeDensification.jpg'
         }
     },
     { 
@@ -32,7 +34,8 @@ const publications = [
         links: {
             paper: "https://arxiv.org/abs/2412.05994",
             project: "https://namgyukang.github.io/Physics-Informed-Gaussians/",
-            code: "https://github.com/NamGyuKang/Physics-Informed-Gaussians"
+            code: "https://github.com/NamGyuKang/Physics-Informed-Gaussians",
+            thumbs: process.env.PUBLIC_URL + '/thumb/PIG.jpg'
         } 
     },
     { 
@@ -43,7 +46,8 @@ const publications = [
         links: {
             paper: "https://arxiv.org/abs/2412.04591",
             project: "https://benhenryl.github.io/MetaFormer/",
-            code: "https://github.com/benhenryL/MetaFormer"
+            code: "https://github.com/benhenryL/MetaFormer",
+            thumbs: process.env.PUBLIC_URL + '/thumb/MetaFormer.jpg'
         } 
     },
     { 
@@ -54,7 +58,8 @@ const publications = [
         links: {
             paper: "https://arxiv.org/abs/2411.17190",
             project: "https://gynjn.github.io/selfsplat/",
-            code: "https://github.com/Gynjn/selfsplat"
+            code: "https://github.com/Gynjn/selfsplat",
+            thumbs: process.env.PUBLIC_URL + '/thumb/SelfSplat.jpg'
         } 
     },
     { 
@@ -64,6 +69,7 @@ const publications = [
         authors: "Jaemin Oh, Seung Yeon Cho, Seok-Bae Yun, Eunbyung Park, Youngjoon Hong",
         links: {
             paper: "https://arxiv.org/abs/2403.06342",
+            thumbs: process.env.PUBLIC_URL + '/thumb/SPINN_BGK.jpg'
         }
     },
     { 
@@ -72,9 +78,10 @@ const publications = [
         journal: "AAAI 2025", 
         authors: "Hyun-kyu Ko*, Dongheok Park*, Youngin Park, Byeonghyeon Lee, Juhee Han, Eunbyung Park",
         links: {
-            paper: "https://arxiv.org/abs/2412.04591",
-            project: "https://benhenryl.github.io/MetaFormer/",
-            code: "https://github.com/benhenryL/MetaFormer"
+            paper: "https://arxiv.org/abs/2412.11525",
+            project: "https://ko-lani.github.io/Sequence-Matters/",
+            code: "https://github.com/DHPark98/SequenceMatters",
+            thumbs: process.env.PUBLIC_URL + '/thumb/SequenceMatters.jpg'
         } 
     },
     { 
@@ -83,9 +90,10 @@ const publications = [
         journal: "AAAI 2025", 
         authors: "Younghyun Kim*, Geunmin Hwang*, Junyu Zhang, Eunbyung Park",
         links: {
-            paper: "https://arxiv.org/abs/2412.04591",
-            project: "https://benhenryl.github.io/MetaFormer/",
-            code: "https://github.com/benhenryL/MetaFormer"
+            paper: "https://arxiv.org/abs/2406.18459",
+            project: "https://yhyun225.github.io/DiffuseHigh/",
+            code: "https://github.com/yhyun225/DiffuseHigh",
+            thumbs: process.env.PUBLIC_URL + '/thumb/DiffuseHigh.jpg'
         } 
     },
     { 
@@ -94,9 +102,10 @@ const publications = [
         journal: "AAAI 2025", 
         authors: "Gyeongjin Kang*, Younggeun Lee*, Seungjun Oh, Eunbyung Park",
         links: {
-            paper: "https://arxiv.org/abs/2412.04591",
-            project: "https://benhenryl.github.io/MetaFormer/",
-            code: "https://github.com/benhenryL/MetaFormer"
+            paper: "https://arxiv.org/abs/2404.04913",
+            project: "https://gynjn.github.io/CodecNeRF/",
+            code: "https://github.com/Gynjn/CodecNeRF",
+            thumbs: process.env.PUBLIC_URL + '/thumb/CodecNeRF.jpg'
         } 
     },
     { 
@@ -106,7 +115,8 @@ const publications = [
         authors: "Seungjun Oh*, Hyunmo Yang*, Eunbyung Park",
         links: {
             paper: "https://arxiv.org/abs/2405.08530",
-            code: "https://github.com/ohsngjun/PEVC"
+            code: "https://github.com/ohsngjun/PEVC",
+            thumbs: process.env.PUBLIC_URL + '/thumb/PEVC.jpg'
         } 
     },
     { 
@@ -117,7 +127,8 @@ const publications = [
         links: {
             paper: "https://arxiv.org/abs/2405.17083",
             project: "https://xiangyu1sun.github.io/Factorize-3DGS/",
-            code: "https://github.com/Xiangyu1Sun/Factorize-3DGS"
+            code: "https://github.com/Xiangyu1Sun/Factorize-3DGS",
+            thumbs: process.env.PUBLIC_URL + '/thumb/F-3DGS.jpg'
         } 
     },
     { 
@@ -128,7 +139,8 @@ const publications = [
         links: {
             paper: "https://arxiv.org/abs/2401.00834",
             project: "https://benhenryl.github.io/Deblurring-3D-Gaussian-Splatting/",
-            code: "https://github.com/benhenryL/Deblurring-3D-Gaussian-Splatting"
+            code: "https://github.com/benhenryL/Deblurring-3D-Gaussian-Splatting",
+            thumbs: process.env.PUBLIC_URL + '/thumb/Deblurring3DGS.jpg'
         } 
     },
     { 
@@ -139,7 +151,8 @@ const publications = [
         links: {
             paper: "https://arxiv.org/abs/2402.18293",
             project: "https://tae-mo.github.io/crad/",
-            code: "https://github.com/tae-mo/CRAD"
+            code: "https://github.com/tae-mo/CRAD",
+            thumbs: process.env.PUBLIC_URL + '/thumb/CRAD.jpg'
         } 
     },
     { 
@@ -149,7 +162,8 @@ const publications = [
         authors: "Youngin Park, Seungtae Nam, Cheul-hee Hahm, Eunbyung Park",
         links: {
             paper: "https://arxiv.org/abs/2406.13251",
-            code: "https://github.com/yi0109/FreqMipAA"
+            code: "https://github.com/yi0109/FreqMipAA",
+            thumbs: process.env.PUBLIC_URL + '/thumb/Freq-Mip-AA.jpg'
         } 
     },
     { 
@@ -160,7 +174,8 @@ const publications = [
         links: {
             paper: "https://arxiv.org/abs/2311.13681",
             project: "https://maincold2.github.io/c3dgs/",
-            code: "https://github.com/maincold2/Compact-3DGS"
+            code: "https://github.com/maincold2/Compact-3DGS",
+            thumbs: process.env.PUBLIC_URL + '/thumb/Compact3DGS.jpg'
         } 
     },
     { 
@@ -170,7 +185,8 @@ const publications = [
         authors: "Junyu Zhang, Daochang Liu, Eunbyung Park, Shichao Zhang, Chang Xu",
         links: {
             paper: "https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Residual_Learning_in_Diffusion_Models_CVPR_2024_paper.html",
-            code: "Coming soon"
+            code: "Coming soon",
+            thumbs: process.env.PUBLIC_URL + '/thumb/ResDiff.jpg'
         }  
     },
     { 
@@ -181,7 +197,8 @@ const publications = [
         links: {
             paper: "https://openreview.net/forum?id=4UiLqimGm5&noteId=4UiLqimGm5",
             project: "https://maincold2.github.io/cam/",
-            code: "https://github.com/maincold2/cam"
+            code: "https://github.com/maincold2/cam",
+            thumbs: process.env.PUBLIC_URL + '/thumb/CAM.jpg'
         }   
     },
     { 
@@ -191,7 +208,8 @@ const publications = [
         links: {
             paper: "https://openaccess.thecvf.com/content/WACV2024/html/Lee_Sharp-NeRF_Grid-Based_Fast_Deblurring_Neural_Radiance_Fields_Using_Sharpness_Prior_WACV_2024_paper.html",
             project: "https://benhenryl.github.io/SharpNeRF/",
-            code: "https://github.com/benhenryL/SharpNeRF"
+            code: "https://github.com/benhenryL/SharpNeRF",
+            thumbs: process.env.PUBLIC_URL + '/thumb/SharpNeRF.jpg'
         }   
     },
     { 
@@ -201,7 +219,8 @@ const publications = [
         authors: "Hanbit Yoon, Usman Ali, Joonhee Choi, Eunbyung Park",
         links: {
             paper: "https://www.sciencedirect.com/science/article/abs/pii/S0031320324006344",
-            code: "Coming soon"
+            code: "Coming soon",
+            thumbs: process.env.PUBLIC_URL + '/thumb/RethinkingCNN.jpg'
         } 
     },
     { 
@@ -211,7 +230,8 @@ const publications = [
         authors: "Sanghyeon Kim*, Hyunmo Yang*, Younghyun Kim*, Youngjoon Hong, Eunbyung Park",
         links: {
             paper: "https://www.sciencedirect.com/science/article/abs/pii/S0893608024003381",
-            code: "https://github.com/extremebird/Hydra"
+            code: "https://github.com/extremebird/Hydra",
+            thumbs: process.env.PUBLIC_URL + '/thumb/Hydra.jpg'
         } 
     },
 ];
@@ -237,6 +257,22 @@ const PublicationPage = () => {
             return part;
         });
     };
+    const [modalOpen, setModalOpen] = useState(false);
+    const [currentImage, setCurrentImage] = useState("");
+
+    const openModal = (image) => {
+        setCurrentImage(image);
+        setModalOpen(true);
+        document.body.style.overflow = "hidden";
+    };
+    
+    const closeModal = () => {
+        setModalOpen(false);
+        setCurrentImage("");
+        document.body.style.overflow = "auto";
+    };
+    
+    
 
     return (
         <div className="publication-page">
@@ -252,43 +288,79 @@ const PublicationPage = () => {
                         <div className="publication-cards">
                             {groupedPublications[year].map((pub, index) => (
                                 <div key={index} className="publication-card">
-                                    <h3>{pub.title}</h3>
-                                    <p>{pub.authors}</p>
-                                    <p>
-                                        <strong>{highlightKeywords(pub.journal)}</strong>
-                                    </p>
-                                    {/* 링크 섹션 */}
-                                    <div className="links">
-                                        {pub.links?.paper &&
-                                            (pub.links.paper === "Coming soon" ? (
-                                                <span>Paper (Coming soon)</span>
-                                            ) : (
-                                                <a href={pub.links.paper} target="_blank" rel="noopener noreferrer">
-                                                    Paper
-                                                </a>
-                                            ))}
-                                        {pub.links?.project &&
-                                            (pub.links.project === "Coming soon" ? (
-                                                <span>Project Page (Coming soon)</span>
-                                            ) : (
-                                                <a href={pub.links.project} target="_blank" rel="noopener noreferrer">
-                                                    Project Page
-                                                </a>
-                                            ))}
-                                        {pub.links?.code &&
-                                            (pub.links.code === "Coming soon" ? (
-                                                <span><strong>Code (Coming soon)</strong></span>
-                                            ) : (
-                                                <a href={pub.links.code} target="_blank" rel="noopener noreferrer">
-                                                    Code
-                                                </a>
-                                            ))}
+                                    <div className="publication-card-content">
+                                        {pub.links?.thumbs && (
+                                            <img
+                                                src={pub.links.thumbs}
+                                                alt={`${pub.title} thumbnail`}
+                                                className="thumbnail"
+                                                onClick={() => openModal(pub.links.thumbs)}
+                                            />
+                                        )}
+                                        <div className="publication-details">
+                                            <h3>{pub.title}</h3>
+                                            <p>{pub.authors}</p>
+                                            <p>
+                                                <strong>{highlightKeywords(pub.journal)}</strong>
+                                            </p>
+                                            <div className="links">
+                                                {pub.links?.paper &&
+                                                    (pub.links.paper === "Coming soon" ? (
+                                                        <span>Paper (Coming soon)</span>
+                                                    ) : (
+                                                        <a
+                                                            href={pub.links.paper}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                        >
+                                                            Paper
+                                                        </a>
+                                                    ))}
+                                                {pub.links?.project &&
+                                                    (pub.links.project === "Coming soon" ? (
+                                                        <span>Project Page (Coming soon)</span>
+                                                    ) : (
+                                                        <a
+                                                            href={pub.links.project}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                        >
+                                                            Project Page
+                                                        </a>
+                                                    ))}
+                                                {pub.links?.code &&
+                                                    (pub.links.code === "Coming soon" ? (
+                                                        <span>
+                                                            <strong>Code (Coming soon)</strong>
+                                                        </span>
+                                                    ) : (
+                                                        <a
+                                                            href={pub.links.code}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                        >
+                                                            Code
+                                                        </a>
+                                                    ))}
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
                 ))}
+            {/* 모달 */}
+            {modalOpen && (
+                <div className="modal" onClick={closeModal}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <span className="close" onClick={closeModal}>
+                            &times;
+                        </span>
+                        <img src={currentImage} alt="Modal Thumbnail" className="modal-image" />
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
