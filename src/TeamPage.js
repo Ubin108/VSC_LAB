@@ -2,24 +2,28 @@ import React from 'react';
 import './TeamPage.css';
 
 const TeamPage = () => {
-    const graduateStudents = [
+    const phDStudents = [
         { 
             name: 'Joo Chan Lee', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg', 
+            img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2020.03 - Present',
             email: 'joolee@example.com', 
+            homepage: 'https://maincold2.github.io/',
             scholar: 'https://scholar.google.com/citations?user=WKCHKk8AAAAJ&hl=en',
             github: 'https://github.com/maincold2' 
         },
         { 
             name: 'Younggeun Lee', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg', 
+            img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2021.09 - Present',
             email: 'younglee@example.com', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=E4iEBFsAAAAJ',
             github: 'https://github.com/Younggeun-L' 
         },
         { 
             name: 'Seungtae Nam', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg', 
+            img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2022.03 - Present',
             email: 'seungtae@example.com', 
             scholar: 'https://scholar.google.com/citations?user=8NKPmmwCmrAC&hl=en',
             github: 'https://github.com/stnamjef'
@@ -27,6 +31,7 @@ const TeamPage = () => {
         { 
             name: 'Xiangyu Sun', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2022.09 - Present',
             email: 'seungtae@example.com', 
             scholar: 'https://scholar.google.com/citations?user=VLzxTrAAAAAJ&hl=en',
             github: 'https://github.com/Xiangyu1Sun'  
@@ -34,6 +39,7 @@ const TeamPage = () => {
         { 
             name: 'Namgyu Kang', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg', 
+            desc: '2022.03 - Present',
             email: 'seungtae@example.com', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=yb9y9k8AAAAJ',
             github: 'https://github.com/NamGyuKang' 
@@ -41,13 +47,15 @@ const TeamPage = () => {
         { 
             name: 'Byeonghyeon Lee', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg', 
+            desc: '2022.09 - Present',
             email: 'seungtae@example.com', 
             scholar: 'https://scholar.google.com/citations?user=_PhPccYAAAAJ&hl=en',
             github: 'https://github.com/benhenryL' 
-        },
+        },        
         { 
             name: 'Junyu Zhang', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2021.09 - Present',
             email: 'seungtae@example.com', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=3jrCsVoAAAAJ',
             github: ''  
@@ -55,13 +63,18 @@ const TeamPage = () => {
         { 
             name: 'Younghyun Kim', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2023.03 - Present',
             email: 'seungtae@example.com', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=4M-6X7MAAAAJ',
             github: 'https://github.com/yhyun225'  
         },
+    ];
+
+    const masterStudents = [
         { 
             name: 'Dohyun Kim', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2023.03 - Present',
             email: 'seungtae@example.com', 
             scholar: '',
             github: 'https://github.com/unhyop'  
@@ -69,6 +82,7 @@ const TeamPage = () => {
         { 
             name: 'Geunmin Hwang', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2023.03 - Present',
             email: 'seungtae@example.com', 
             scholar: '',
             github: 'https://github.com/GeunminHwang'  
@@ -76,13 +90,15 @@ const TeamPage = () => {
         { 
             name: 'Seungjun Oh', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2023.09 - Present',
             email: 'seungtae@example.com', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=HMnjBk0AAAAJ',
             github: 'https://github.com/ohsngjun'  
         },
         { 
             name: 'Gyeongjin Kang', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg', 
+            img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2024.03 - Present', 
             email: 'seungtae@example.com', 
             scholar: 'https://scholar.google.com/citations?user=iyQ16vIAAAAJ&hl=en',
             github: 'https://github.com/Gynjn' 
@@ -90,6 +106,7 @@ const TeamPage = () => {
         { 
             name: 'Dongheok Park', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2024.03 - Present',
             email: 'seungtae@example.com', 
             scholar: '',
             github: 'https://github.com/DHPark98'  
@@ -97,6 +114,7 @@ const TeamPage = () => {
         { 
             name: 'Hyun-kyu Ko', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2024.03 - Present',
             email: 'seungtae@example.com', 
             scholar: '',
             github: 'https://github.com/Ko-Lani'  
@@ -104,6 +122,7 @@ const TeamPage = () => {
         { 
             name: 'Jisang Yoo', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2024.03 - Present',
             email: 'seungtae@example.com', 
             scholar: '',
             github: 'https://github.com/Yoo-jisang'  
@@ -111,6 +130,7 @@ const TeamPage = () => {
         { 
             name: 'Hye Jin Jeon', 
             img: process.env.PUBLIC_URL + '/team/temp2.jpg',
+            desc: '2024.03 - Present',
             email: 'seungtae@example.com', 
             scholar: '',
             github: 'https://github.com/jeonhhyejin'  
@@ -118,6 +138,7 @@ const TeamPage = () => {
         { 
             name: 'Youbin Kim', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2024.09 - Present',
             email: 'ybin108@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=RUiA8-wAAAAJ',
             github: 'https://github.com/Ubin108'  
@@ -125,6 +146,7 @@ const TeamPage = () => {
         { 
             name: 'Ji Hyeon Park', 
             img: process.env.PUBLIC_URL + '/team/temp2.jpg',
+            desc: '2024.09 - Present',
             email: 'seungtae@example.com', 
             scholar: '',
             github: 'https://github.com/Kanadae'  
@@ -132,6 +154,7 @@ const TeamPage = () => {
         { 
             name: 'Seungryong Lee', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2024.09 - Present',
             email: 'seungtae@example.com', 
             scholar: '',
             github: 'https://github.com/lms20031'  
@@ -139,6 +162,7 @@ const TeamPage = () => {
         { 
             name: 'Eunsoo Lee', 
             img: process.env.PUBLIC_URL + '/team/temp2.jpg',
+            desc: '2024.09 - Present',
             email: 'seungtae@example.com', 
             scholar: '',
             github: 'https://github.com/esleeo'  
@@ -146,11 +170,26 @@ const TeamPage = () => {
     ];
 
     const undergraduateStudents = [
-        { name: 'Jinho Park', img: process.env.PUBLIC_URL + '/team/temp.jpg' },
-        { name: 'Hyunsu Kim', img: process.env.PUBLIC_URL + '/team/temp2.jpg' },
-        { name: 'Woojeong Baek', img: process.env.PUBLIC_URL + '/team/temp2.jpg' },
-        { name: 'Seungkwon Yang', img: process.env.PUBLIC_URL + '/team/temp.jpg' },
-        { name: 'Minseo Lee', img: process.env.PUBLIC_URL + '/team/temp2.jpg' },
+        { 
+            name: 'Jinho Park', 
+            img: process.env.PUBLIC_URL + '/team/temp.jpg'
+        },
+        { 
+            name: 'Hyunsu Kim', 
+            img: process.env.PUBLIC_URL + '/team/temp2.jpg' 
+        },
+        { 
+            name: 'Woojeong Baek', 
+            img: process.env.PUBLIC_URL + '/team/temp2.jpg' 
+        },
+        { 
+            name: 'Seungkwon Yang', 
+            img: process.env.PUBLIC_URL + '/team/temp.jpg' 
+        },
+        { 
+            name: 'Minseo Lee', 
+            img: process.env.PUBLIC_URL + '/team/temp2.jpg' 
+        },
     ];
 
     const alumni = [
@@ -223,12 +262,32 @@ const TeamPage = () => {
 
 
             <section>
-                <h2>Graduate Students</h2>
+                <h2>Ph.D. Students</h2>
                 <div className="students">
-                    {graduateStudents.map((student, index) => (
+                    {phDStudents.map((student, index) => (
                         <div key={index} className="member">
                             <img src={student.img} alt={student.name} className="profile-img" />
                             <p>{student.name}</p>
+                            <p id='desc'>{student.desc}</p>
+                            <div className="student-links">
+                                {student.email && <a href={`mailto:${student.email}`}><i className="fa fa-envelope-o" style={{ fontSize: '24px', color: 'black' }}></i></a>}
+                                {student.homepage && <a href={student.homepage}><i className="fa fa-home" style={{ fontSize: '24px', color: 'black' }}></i></a>}
+                                {student.scholar && <a href={student.scholar}><i className="ai ai-google-scholar" style={{ fontSize: '24px', color: 'black' }}></i></a>}
+                                {student.github && <a href={student.github}><i className="fa fa-github" style={{ fontSize: '24px', color: 'black' }}></i></a>}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            <section>
+                <h2>Master Students</h2>
+                <div className="students">
+                    {masterStudents.map((student, index) => (
+                        <div key={index} className="member">
+                            <img src={student.img} alt={student.name} className="profile-img" />
+                            <p>{student.name}</p>
+                            <p id='desc'>{student.desc}</p>
                             <div className="student-links">
                                 {student.email && <a href={`mailto:${student.email}`}><i className="fa fa-envelope-o" style={{ fontSize: '24px', color: 'black' }}></i></a>}
                                 {student.scholar && <a href={student.scholar}><i className="ai ai-google-scholar" style={{ fontSize: '24px', color: 'black' }}></i></a>}

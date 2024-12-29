@@ -2,10 +2,13 @@
 @import url('https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css');
 
 .team-page {
-    padding: 100px 20px 0px;
+    padding:100px 20px 0px;
     max-width: 1000px;
     margin: 0 auto;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: "Caladea", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .team-page h1 {
@@ -19,13 +22,12 @@
 }
 
 .team-page h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     color: #000000;
     /* border-bottom: 2px solid #5e5e5e; */
     padding-bottom: 5px;
 }
-
 
 .profile {
     display: flex;
@@ -94,6 +96,12 @@
     margin-bottom: 15px;
 }
 
+.member p#desc {
+    font-size: 0.8rem;
+    color: #666666;
+    font-style: italic;
+    margin: 0;
+}
 
 .member p {
     font-size: 1rem;

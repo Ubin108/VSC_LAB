@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom';
 import TeamPage from './TeamPage';
+import PublicationPage from './PublicationPage';
 import './App.css';
 
 const App = () => {
@@ -194,7 +195,8 @@ const App = () => {
                         }
                     />
                     <Route path="/team" element={<TeamPage />} />
-                    <Route path="*" element={<Navigate to="/" />} /> {}
+                    <Route path="/publication" element={<PublicationPage />} />
+                    <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
 
                 <footer className="footer">
