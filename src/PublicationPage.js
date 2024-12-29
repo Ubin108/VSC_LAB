@@ -66,20 +66,154 @@ const publications = [
             paper: "https://arxiv.org/abs/2403.06342",
         }
     },
-    { year: 2025, title: "Sequence Matters: Harnessing Video Models in 3D Super-Resolution", journal: "AAAI 2025", authors: "Hyun-kyu Ko*, Dongheok Park*, Youngin Park, Byeonghyeon Lee, Juhee Han, Eunbyung Park" },
-    { year: 2025, title: "DiffuseHigh: Training-free Progressive High-Resolution Image Synthesis through Structure Guidance", journal: "AAAI 2025", authors: "Younghyun Kim*, Geunmin Hwang*, Junyu Zhang, Eunbyung Park" },
-    { year: 2025, title: "CodecNeRF: Toward Fast Encoding and Decoding, Compact, and High-quality Novel-view Synthesis", journal: "AAAI 2025", authors: "Gyeongjin Kang*, Younggeun Lee*, Seungjun Oh, Eunbyung Park" },
-    { year: 2024, title: "Parameter-Efficient Instance-Adaptive Neural Video Compression", journal: "ACCV 2024 Oral (acceptance rate = 5.6%)", authors: "Seungjun Oh*, Hyunmo Yang*, Eunbyung Park" },
-    { year: 2024, title: "F-3DGS: Factorized Coordinates and Representations for 3D Gaussian Splatting", journal: "ACM MM 2024", authors: "Xiangyu Sun, Joo Chan Lee, Daniel Rho, Jong Hwan Ko, Usman Ali, Eunbyung Park" },
-    { year: 2024, title: "Deblurring 3D Gaussian Splatting", journal: "ECCV 2024", authors: "Byeonghyeon Lee*, Howoong Lee*, Xiangyu Sun, Usman Ali, Eunbyung Park" },
-    { year: 2024, title: "Continuous Memory Representation for Anomaly Detection", journal: "ECCV 2024", authors: "Joo Chan Lee*, Taejune Kim*, Eunbyung Park, Simon S. Woo, Jong Hwan Ko" },
-    { year: 2024, title: "Freq-Mip-AA : Frequency Mip Representation for Anti-Aliasing Neural Radiance Fields", journal: "ICIP 2024 Best Paper Candidates", authors: "Youngin Park, Seungtae Nam, Cheul-hee Hahm, Eunbyung Park" },
-    { year: 2024, title: "Compact 3D Gaussian Representation for Radiance Field", journal: "CVPR 2024 Highlight (acceptance rate = 2.8%)", authors: "Joo Chan Lee, Daniel Rho, Xiangyu Sun, Jong Hwan Ko, Eunbyung Park" },
-    { year: 2024, title: "Residual Learning in Diffusion Models", journal: "CVPR 2024 Highlight (acceptance rate = 2.8%)", authors: "Junyu Zhang, Daochang Liu, Eunbyung Park, Shichao Zhang, Chang Xu" },
-    { year: 2024, title: "Coordinate-Aware Modulation for Neural Fields", journal: "ICLR 2024 Spotlight (acceptance rate = 5.01%)", authors: "Joo Chan Lee, Daniel Rho, Seungtae Nam, Jong Hwan Ko, Eunbyung Park" },
-    { year: 2024, title: "Sharp-NeRF: Grid-based Fast Deblurring Neural Radiance Field using Sharpness Prior", journal: "WACV 2024", authors: "Byeonghyeon Lee*, Howoong Lee*, Usman Ali, Eunbyung Park" },
-    { year: 2024, title: "Rethinking Convolutional Neural Networks for Trajectory Refinement", journal: "Pattern Recognition, Elsevier, 2024", authors: "Hanbit Yoon, Usman Ali, Joonhee Choi, Eunbyung Park" },
-    { year: 2024, title: "Hydra: Multi-head Low-rank Adaptation for Parameter Efficient Fine-tuning", journal: "Neural Networks, Elsevier, 2024", authors: "Sanghyeon Kim*, Hyunmo Yang*, Younghyun Kim*, Youngjoon Hong, Eunbyung Park" },
+    { 
+        year: 2025, 
+        title: "Sequence Matters: Harnessing Video Models in 3D Super-Resolution", 
+        journal: "AAAI 2025", 
+        authors: "Hyun-kyu Ko*, Dongheok Park*, Youngin Park, Byeonghyeon Lee, Juhee Han, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2412.04591",
+            project: "https://benhenryl.github.io/MetaFormer/",
+            code: "https://github.com/benhenryL/MetaFormer"
+        } 
+    },
+    { 
+        year: 2025, 
+        title: "DiffuseHigh: Training-free Progressive High-Resolution Image Synthesis through Structure Guidance", 
+        journal: "AAAI 2025", 
+        authors: "Younghyun Kim*, Geunmin Hwang*, Junyu Zhang, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2412.04591",
+            project: "https://benhenryl.github.io/MetaFormer/",
+            code: "https://github.com/benhenryL/MetaFormer"
+        } 
+    },
+    { 
+        year: 2025, 
+        title: "CodecNeRF: Toward Fast Encoding and Decoding, Compact, and High-quality Novel-view Synthesis", 
+        journal: "AAAI 2025", 
+        authors: "Gyeongjin Kang*, Younggeun Lee*, Seungjun Oh, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2412.04591",
+            project: "https://benhenryl.github.io/MetaFormer/",
+            code: "https://github.com/benhenryL/MetaFormer"
+        } 
+    },
+    { 
+        year: 2024, 
+        title: "Parameter-Efficient Instance-Adaptive Neural Video Compression", 
+        journal: "ACCV 2024 Oral (acceptance rate = 5.6%)", 
+        authors: "Seungjun Oh*, Hyunmo Yang*, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2405.08530",
+            code: "https://github.com/ohsngjun/PEVC"
+        } 
+    },
+    { 
+        year: 2024, 
+        title: "F-3DGS: Factorized Coordinates and Representations for 3D Gaussian Splatting", 
+        journal: "ACM MM 2024", 
+        authors: "Xiangyu Sun, Joo Chan Lee, Daniel Rho, Jong Hwan Ko, Usman Ali, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2405.17083",
+            project: "https://xiangyu1sun.github.io/Factorize-3DGS/",
+            code: "https://github.com/Xiangyu1Sun/Factorize-3DGS"
+        } 
+    },
+    { 
+        year: 2024, 
+        title: "Deblurring 3D Gaussian Splatting", 
+        journal: "ECCV 2024", 
+        authors: "Byeonghyeon Lee*, Howoong Lee*, Xiangyu Sun, Usman Ali, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2401.00834",
+            project: "https://benhenryl.github.io/Deblurring-3D-Gaussian-Splatting/",
+            code: "https://github.com/benhenryL/Deblurring-3D-Gaussian-Splatting"
+        } 
+    },
+    { 
+        year: 2024, 
+        title: "Continuous Memory Representation for Anomaly Detection", 
+        journal: "ECCV 2024", 
+        authors: "Joo Chan Lee*, Taejune Kim*, Eunbyung Park, Simon S. Woo, Jong Hwan Ko",
+        links: {
+            paper: "https://arxiv.org/abs/2402.18293",
+            project: "https://tae-mo.github.io/crad/",
+            code: "https://github.com/tae-mo/CRAD"
+        } 
+    },
+    { 
+        year: 2024, 
+        title: "Freq-Mip-AA : Frequency Mip Representation for Anti-Aliasing Neural Radiance Fields", 
+        journal: "ICIP 2024 Best Paper Candidates", 
+        authors: "Youngin Park, Seungtae Nam, Cheul-hee Hahm, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2406.13251",
+            code: "https://github.com/yi0109/FreqMipAA"
+        } 
+    },
+    { 
+        year: 2024, 
+        title: "Compact 3D Gaussian Representation for Radiance Field", 
+        journal: "CVPR 2024 Highlight (acceptance rate = 2.8%)", 
+        authors: "Joo Chan Lee, Daniel Rho, Xiangyu Sun, Jong Hwan Ko, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2311.13681",
+            project: "https://maincold2.github.io/c3dgs/",
+            code: "https://github.com/maincold2/Compact-3DGS"
+        } 
+    },
+    { 
+        year: 2024, 
+        title: "Residual Learning in Diffusion Models", 
+        journal: "CVPR 2024 Highlight (acceptance rate = 2.8%)", 
+        authors: "Junyu Zhang, Daochang Liu, Eunbyung Park, Shichao Zhang, Chang Xu",
+        links: {
+            paper: "https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Residual_Learning_in_Diffusion_Models_CVPR_2024_paper.html",
+            code: "Coming soon"
+        }  
+    },
+    { 
+        year: 2024, 
+        title: "Coordinate-Aware Modulation for Neural Fields", 
+        journal: "ICLR 2024 Spotlight (acceptance rate = 5.01%)", 
+        authors: "Joo Chan Lee, Daniel Rho, Seungtae Nam, Jong Hwan Ko, Eunbyung Park",
+        links: {
+            paper: "https://openreview.net/forum?id=4UiLqimGm5&noteId=4UiLqimGm5",
+            project: "https://maincold2.github.io/cam/",
+            code: "https://github.com/maincold2/cam"
+        }   
+    },
+    { 
+        year: 2024, 
+        title: "Sharp-NeRF: Grid-based Fast Deblurring Neural Radiance Field using Sharpness Prior", 
+        journal: "WACV 2024", authors: "Byeonghyeon Lee*, Howoong Lee*, Usman Ali, Eunbyung Park",
+        links: {
+            paper: "https://openaccess.thecvf.com/content/WACV2024/html/Lee_Sharp-NeRF_Grid-Based_Fast_Deblurring_Neural_Radiance_Fields_Using_Sharpness_Prior_WACV_2024_paper.html",
+            project: "https://benhenryl.github.io/SharpNeRF/",
+            code: "https://github.com/benhenryL/SharpNeRF"
+        }   
+    },
+    { 
+        year: 2024, 
+        title: "Rethinking Convolutional Neural Networks for Trajectory Refinement", 
+        journal: "Pattern Recognition, Elsevier, 2024", 
+        authors: "Hanbit Yoon, Usman Ali, Joonhee Choi, Eunbyung Park",
+        links: {
+            paper: "https://www.sciencedirect.com/science/article/abs/pii/S0031320324006344",
+            code: "Coming soon"
+        } 
+    },
+    { 
+        year: 2024, 
+        title: "Hydra: Multi-head Low-rank Adaptation for Parameter Efficient Fine-tuning", 
+        journal: "Neural Networks, Elsevier, 2024", 
+        authors: "Sanghyeon Kim*, Hyunmo Yang*, Younghyun Kim*, Youngjoon Hong, Eunbyung Park",
+        links: {
+            paper: "https://www.sciencedirect.com/science/article/abs/pii/S0893608024003381",
+            code: "https://github.com/extremebird/Hydra"
+        } 
+    },
 ];
 
 const groupedPublications = publications.reduce((acc, pub) => {

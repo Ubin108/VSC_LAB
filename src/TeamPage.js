@@ -203,7 +203,7 @@ const TeamPage = () => {
         'Namgyu Kang (MS, 2022.03 - 2024.08), PhD student at VSC Lab, SKKU',
         'Byeonghyeon Lee (MS, 2022.09 - 2024.08), PhD student at VSC Lab, SKKU',
         'Howoong Lee (MS, 2022.09 - 2024.08), industrial scholars program, Hanwha Vision',
-        'Youngin Park (MS, 2023.03 - 2024.08), part time industrial scholars program, Samsung Electronics]'];
+        'Youngin Park (MS, 2023.03 - 2024.08), part time industrial scholars program, Samsung Electronics'];
 
     return (
         <div className="team-page">
