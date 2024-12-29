@@ -109,9 +109,11 @@ const App = () => {
     return (
         <Router>
             <div className="App">
-                <nav className="navbar">
+                <nav className="navbar"> 
                     <div className="title">
-                        {isSmallScreen ? "VSC Lab" : "Visual and Scientific Computing Lab"}
+                        <a href="/" className="title-link">
+                            {isSmallScreen ? "VSC Lab" : "Visual and Scientific Computing Lab"}
+                        </a>
                     </div>
                     <div className="menu">
                         <Link to="/">Home</Link>
@@ -196,7 +198,7 @@ const App = () => {
                     />
                     <Route path="/team" element={<TeamPage />} />
                     <Route path="/publication" element={<PublicationPage />} />
-                    <Route path="*" element={<Navigate to="/" />} />
+                    <Route path="*" element={<Navigate to="/" />} /> {}
                 </Routes>
 
                 <footer className="footer">

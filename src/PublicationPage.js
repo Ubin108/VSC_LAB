@@ -89,7 +89,6 @@ const groupedPublications = publications.reduce((acc, pub) => {
 }, {});
 
 const PublicationPage = () => {
-    // 특정 키워드 강조 함수 (위에서 추가한 highlightKeywords 재사용 가능)
     const highlightKeywords = (text) => {
         const keywords = ["Highlight", "Spotlight", "Oral"];
         const parts = text.split(new RegExp(`(${keywords.join("|")})`, "g"));
