@@ -108,7 +108,7 @@ const TeamPage = () => {
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
             desc: '2024.03 - Present',
             email: 'seungtae@example.com', 
-            scholar: '',
+            scholar: 'https://scholar.google.com/citations?user=UUtpFKgAAAAJ&hl=ko&oi=ao',
             github: 'https://github.com/DHPark98'  
         },
         { 
@@ -116,7 +116,7 @@ const TeamPage = () => {
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
             desc: '2024.03 - Present',
             email: 'seungtae@example.com', 
-            scholar: '',
+            scholar: 'https://scholar.google.com/citations?hl=ko&user=lsi-8-QAAAAJ',
             github: 'https://github.com/Ko-Lani'  
         },
         { 
@@ -137,7 +137,7 @@ const TeamPage = () => {
         },
         { 
             name: 'Youbin Kim', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            img: process.env.PUBLIC_URL + '/team/youbinkim.jpg',
             desc: '2024.09 - Present',
             email: 'ybin108@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=RUiA8-wAAAAJ',

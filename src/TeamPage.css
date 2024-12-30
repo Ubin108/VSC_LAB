@@ -2,7 +2,7 @@
 @import url('https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css');
 
 .team-page {
-    padding:100px 20px 0px;
+    padding: 100px 20px 0px;
     max-width: 1000px;
     margin: 0 auto;
     /* font-family: Arial, sans-serif; */
@@ -89,7 +89,7 @@
 .member img {
     width: 200px;
     height: 200px;
-    border-radius: 10%;
+    border-radius: 100%;
     object-fit: cover;
     object-position: top;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);

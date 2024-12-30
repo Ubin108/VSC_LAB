@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom';
 import TeamPage from './TeamPage';
 import PublicationPage from './PublicationPage';
+import GalleryPage from './GalleryPage';
 import './App.css';
 
 const App = () => {
@@ -28,6 +29,9 @@ const App = () => {
         { src: process.env.PUBLIC_URL + '/home/CodecNerf.jpg', alt: 'CodecNerf' },
         { src: process.env.PUBLIC_URL + '/home/SequenceMatters.jpg', alt: 'SequenceMatters' },
         { src: process.env.PUBLIC_URL + '/home/PEVC.jpg', alt: 'PEVC' },
+        // { src: process.env.PUBLIC_URL + '/home/pair_01.jpg', alt: 'pair01' },
+        // { src: process.env.PUBLIC_URL + '/home/pair_02.jpg', alt: 'pair02' },
+        // { src: process.env.PUBLIC_URL + '/home/pair_03.jpg', alt: 'pair03' },
     ];
 
     const extendedImages = [images[images.length - 1], ...images, images[0]]; // Add last and first image for smooth looping
@@ -111,7 +115,7 @@ const App = () => {
             <div className="App">
                 <nav className="navbar"> 
                     <div className="title">
-                        <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Logo" className="logo" />
+                        <img src={process.env.PUBLIC_URL + '/yonsei.png'} alt="Logo" className="logo" />
                         <Link to="/" className="title-link">
                             {isSmallScreen ? "VSC Lab" : "Visual and Scientific Computing Lab"}
                         </Link>
@@ -199,13 +203,13 @@ const App = () => {
                     />
                     <Route path="/team" element={<TeamPage />} />
                     <Route path="/publication" element={<PublicationPage />} />
+                    <Route path="/gallery" element={<GalleryPage />} />
                     <Route path="*" element={<Navigate to="/" />} /> {}
                 </Routes>
 
                 <footer className="footer">
-                    <p>Sungkyunkwan University</p>
-                    <p>(16419) 2066, SEOBU-RO, JANGAN-GU, SUWON-SI, GYEONGGI-DO, KOREA</p>
-                    <p>Contact: epark@skku.edu</p>
+                    <p>Yonsei University</p>
+                    <p>50 Yonsei-ro Seodaemun-gu, Seoul, 03722, Republic of Korea</p>
                 </footer>
             </div>
         </Router>
