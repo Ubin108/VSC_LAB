@@ -9,7 +9,9 @@ const App = () => {
     const [currentIndex, setCurrentIndex] = useState(1); // Start at the first image in the extended array
     const [isTransitioning, setIsTransitioning] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
+
     const [isSmallScreen, setIsSmallScreen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -24,6 +26,9 @@ const App = () => {
         };
     }, []);
 
+    const toggleMenu = () => {
+        setIsMenuOpen((prev) => !prev);
+    };
     const images = [
         { src: process.env.PUBLIC_URL + '/home/DiffuseHigh.jpg', alt: 'DiffuseHigh' },
         { src: process.env.PUBLIC_URL + '/home/CodecNerf.jpg', alt: 'CodecNerf' },
@@ -113,19 +118,28 @@ const App = () => {
     return (
         <Router basename="/VSC_LAB">
             <div className="App">
-                <nav className="navbar"> 
+                <nav className="navbar">
                     <div className="title">
                         <img src={process.env.PUBLIC_URL + '/yonsei.png'} alt="Logo" className="logo" />
                         <Link to="/" className="title-link">
                             {isSmallScreen ? "VSC Lab" : "Visual and Scientific Computing Lab"}
                         </Link>
                     </div>
-                    <div className="menu">
-                        <Link to="/">Home</Link>
-                        <Link to="/team">Team</Link>
-                        <Link to="/publication">Publication</Link>
-                        <Link to="/gallery">Gallery</Link>
-                        <Link to="/contact">Contact</Link>
+                    <div className={`menu ${isSmallScreen ? "mobile-menu" : ""}`}>
+                        {isSmallScreen ? (
+                            <button className="hamburger-icon" onClick={toggleMenu}>
+                                <div className={`line ${isMenuOpen ? "open" : ""}`}></div>
+                                <div className={`line ${isMenuOpen ? "open" : ""}`}></div>
+                                <div className={`line ${isMenuOpen ? "open" : ""}`}></div>
+                            </button>
+                        ) : null}
+                        <div className={`menu-items ${isMenuOpen ? "open" : ""}`}>
+                            <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
+                            <Link to="/team" onClick={() => setIsMenuOpen(false)}>Team</Link>
+                            <Link to="/publication" onClick={() => setIsMenuOpen(false)}>Publication</Link>
+                            <Link to="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</Link>
+                            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+                        </div>
                     </div>
                 </nav>
 
