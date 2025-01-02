@@ -5,7 +5,7 @@ const TeamPage = () => {
     const phDStudents = [
         { 
             name: 'Joo Chan Lee', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            img: process.env.PUBLIC_URL + '/team/JCL.png',
             desc: '2020.03 - Present',
             email: 'joolee@example.com', 
             homepage: 'https://maincold2.github.io/',
@@ -105,7 +105,7 @@ const TeamPage = () => {
         },
         { 
             name: 'Dongheok Park', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            img: process.env.PUBLIC_URL + '/team/DHP.jpg',
             desc: '2024.03 - Present',
             email: 'seungtae@example.com', 
             scholar: 'https://scholar.google.com/citations?user=UUtpFKgAAAAJ&hl=ko&oi=ao',
@@ -137,7 +137,7 @@ const TeamPage = () => {
         },
         { 
             name: 'Youbin Kim', 
-            img: process.env.PUBLIC_URL + '/team/youbinkim.jpg',
+            img: process.env.PUBLIC_URL + '/team/YBK.jpg',
             desc: '2024.09 - Present',
             email: 'ybin108@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=RUiA8-wAAAAJ',
@@ -167,13 +167,25 @@ const TeamPage = () => {
             scholar: '',
             github: 'https://github.com/esleeo'  
         },
+        { 
+            name: 'Jinho Park', 
+            img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            desc: '2025.03 - Present',
+            email: 'seungtae@example.com', 
+            scholar: '',
+            github: 'https://github.com/'
+        },
+        { 
+            name: 'Seungkwon Yang', 
+            img: process.env.PUBLIC_URL + '/team/SGY.jpg',
+            desc: '2025.03 - Present',
+            email: 'seungtae@example.com', 
+            scholar: '',
+            github: 'https://github.com/'
+        },
     ];
 
     const undergraduateStudents = [
-        { 
-            name: 'Jinho Park', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg'
-        },
         { 
             name: 'Hyunsu Kim', 
             img: process.env.PUBLIC_URL + '/team/temp2.jpg' 
@@ -181,10 +193,6 @@ const TeamPage = () => {
         { 
             name: 'Woojeong Baek', 
             img: process.env.PUBLIC_URL + '/team/temp2.jpg' 
-        },
-        { 
-            name: 'Seungkwon Yang', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg' 
         },
         { 
             name: 'Minseo Lee', 
