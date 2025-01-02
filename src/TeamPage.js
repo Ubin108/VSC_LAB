@@ -113,7 +113,7 @@ const TeamPage = () => {
         },
         { 
             name: 'Hyun-kyu Ko', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            img: process.env.PUBLIC_URL + '/team/HKK.jpeg',
             desc: '2024.03 - Present',
             email: 'seungtae@example.com', 
             scholar: 'https://scholar.google.com/citations?hl=ko&user=lsi-8-QAAAAJ',
@@ -173,7 +173,7 @@ const TeamPage = () => {
             desc: '2025.03 - Present',
             email: 'seungtae@example.com', 
             scholar: '',
-            github: 'https://github.com/'
+            github: 'https://github.com/zinosii'
         },
         { 
             name: 'Seungkwon Yang', 
@@ -181,7 +181,7 @@ const TeamPage = () => {
             desc: '2025.03 - Present',
             email: 'seungtae@example.com', 
             scholar: '',
-            github: 'https://github.com/'
+            github: 'https://github.com/yang-gwon2'
         },
     ];
 
@@ -201,17 +201,62 @@ const TeamPage = () => {
     ];
 
     const alumni = [
-        'Daniel Rho (MS, 2020.09 - 2022.08), co-advised by Jong Hwan Ko, KT → PhD student at UNC Chapel Hill',
-        'Hanbit Yoon (MS, 2021.09 - 2023.08), co-advised by Joon Hee Choi, Samsung Electronics',
-        'Sanghyeon Kim (MS, 2021.09 - 2023.08), LG CNS',
-        'Junwoo Cho (MS, 2021.09 - 2023.08), Lunit',
-        'Usman Ali (Research Professor, 2022.09 - 2024.02), assistant professor at Sejong University',
-        'Seungtae Nam (MS, 2022.03 - 2024.02), PhD student at VSC Lab, SKKU',
-        'Hyunmo Yang (MS, 2022.03 - 2024.02)',
-        'Namgyu Kang (MS, 2022.03 - 2024.08), PhD student at VSC Lab, SKKU',
-        'Byeonghyeon Lee (MS, 2022.09 - 2024.08), PhD student at VSC Lab, SKKU',
-        'Howoong Lee (MS, 2022.09 - 2024.08), industrial scholars program, Hanwha Vision',
-        'Youngin Park (MS, 2023.03 - 2024.08), part time industrial scholars program, Samsung Electronics'];
+        { 
+            name: 'Daniel Rho', 
+            desc: 'MS, 2020.09 - 2022.08 (co-advised by Jong Hwan Ko)',
+            current: 'PhD student at UNC Chapel Hill',
+        },
+        { 
+            name: 'Hanbit Yoon',
+            desc: 'MS, 2021.09 - 2023.08 (co-advised by Joon Hee Choi)',
+            current: 'Samsung Electronics'
+        },
+        { 
+            name: 'Sanghyeon Kim', 
+            desc: 'MS, 2021.09 - 2023.08',
+            current: 'LG CNS'
+        },
+        { 
+            name: 'Junwoo Cho',
+            desc: 'MS, 2021.09 - 2023.08', 
+            current: 'Lunit'
+        },
+        { 
+            name: 'Usman Ali', 
+            desc: 'Research Professor, 2022.09 - 2024.02', 
+            current: 'Assistant Professor at Sejong University'
+        },
+        { 
+            name: 'Seungtae Nam',
+            desc: 'MS, 2022.03 - 2024.02', 
+            current: 'PhD student at VSC Lab, SKKU'
+        },
+        { 
+            name: 'Hyunmo Yang', 
+            desc: 'MS, 2022.03 - 2024.02',
+            current: ''
+        },
+        { 
+            name: 'Namgyu Kang', 
+            desc: 'MS, 2022.03 - 2024.08',
+            current: 'PhD student at VSC Lab, SKKU'
+        },
+        { 
+            name: 'Byeonghyeon Lee', 
+            desc: 'MS, 2022.09 - 2024.08', 
+            current: 'PhD student at VSC Lab, SKKU'
+        },
+        { 
+            name: 'Howoong Lee', 
+            desc: 'MS, 2022.09 - 2024.08 (Industrial Scholars Program)', 
+            current: 'Hanwha Vision'
+        },
+        { 
+            name: 'Youngin Park', 
+            desc: 'MS, 2023.03 - 2024.08 (Part-time Industrial Scholars Program)',
+            current: 'Samsung Electronics'
+        }
+    ];
 
     return (
         <div className="team-page">
@@ -225,7 +270,7 @@ const TeamPage = () => {
                             className="profile-img"
                         />
                         
-                        <a href="https://silverbottlep.github.io/index.html">Eunbyung Park</a>
+                        <p>Eunbyung Park</p>
                         <div className='bio'>
                             <a href="mailto:epark@skku.edu">
                                 <i className="fa fa-envelope-o" style={{ fontSize: '24px', color: 'black' }}></i>
@@ -325,11 +370,17 @@ const TeamPage = () => {
 
             <section>
                 <h2>Alumni</h2>
-                <ul className="alumni-list">
+                <div className="alumni">
                     {alumni.map((alumnus, index) => (
-                        <li key={index}>{alumnus}</li>
+                        <div key={index} className="alumnus">
+                            <p className="alumnus-info">
+                                <span className="name">{alumnus.name}</span>
+                                <span className="desc">{alumnus.desc}</span>
+                                <span className="current">{alumnus.current}</span>
+                            </p>
+                        </div>
                     ))}
-                </ul>
+                </div>
             </section>
         </div>
     );

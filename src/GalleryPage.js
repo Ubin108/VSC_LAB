@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
 import './GalleryPage.css';
 
-const albums = [
+const albums = [    
+    {
+        year: 2024,
+        title: 'JKAIA 2024',
+        description: '2024.11.22.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2024_jkaia_1.jpeg', alt: 'Album 1 - Image 1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_jkaia_2.jpeg', alt: 'Album 1 - Image 1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_jkaia_3.jpeg', alt: 'Album 1 - Image 1' },
+        ],
+    },
     {
         year: 2024,
         title: 'CVPR 2025 Deadline Celebration',
@@ -20,6 +30,16 @@ const albums = [
             { src: process.env.PUBLIC_URL + '/gallery/2024_summer_ceremony_3.JPG', alt: 'Album 2 - Image 3' },
             { src: process.env.PUBLIC_URL + '/gallery/2024_summer_ceremony_4.JPG', alt: 'Album 2 - Image 4' },
             { src: process.env.PUBLIC_URL + '/gallery/2024_summer_ceremony_5.JPG', alt: 'Album 2 - Image 5' },
+        ],
+    },
+    {
+        year: 2024,
+        title: 'KCCV 2024',
+        description: '2024.08.12.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2024_kccv_1.jpeg', alt: 'Album 2 - Image 1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_kccv_2.jpeg', alt: 'Album 2 - Image 2' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_kccv_3.jpeg', alt: 'Album 2 - Image 3' },
         ],
     },
     {

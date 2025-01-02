@@ -78,6 +78,7 @@
     flex-wrap: wrap;
     /* justify-content: space-between; */
     gap: 20px;
+    
 }
 
 .member {
@@ -96,6 +97,7 @@
     margin-bottom: 15px;
 }
 
+
 .member p#desc {
     font-size: 0.8rem;
     color: #666666;
@@ -108,6 +110,7 @@
     color: #000000;
     margin: 0;
 }
+
 
 .member a {
     font-size: 1rem;
@@ -138,14 +141,83 @@
 }
 
 
-.alumni-list {
-    list-style-type: disc;
-    padding-left: 20px;
+.alumnus-info {
+    /* margin: 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
 }
 
-.alumni-list li {
-    margin-bottom: 10px;
+.alumni {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    text-align: left;
+}
+
+.alumnus {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+.alumnus strong {
     font-size: 1rem;
-    color: #000000;
+    color: #333;
 }
 
+.desc {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #555;
+    margin-left: 10px;
+}
+
+.current {
+    font-size: 1rem;
+    margin-left: auto;
+    text-align: right;
+    font-style: normal;
+    /* color: #5582d6; */
+}
+
+
+@media (max-width: 768px) {
+    .member img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .member p {
+        font-size: 0.7rem;
+    }
+    .member p#desc {
+        font-size: 0.6rem;
+    }
+    .member a{
+        font-size: 0.5rem;
+    }
+
+    .member i {
+        font-size: 1rem !important;
+    }
+    .profile {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .alumnus {
+        font-size: 0.7rem;
+    }
+    .desc {
+        font-size: 0.4rem;
+        margin-left: 0px;
+    }
+    .current {
+        font-size: 0.4rem;
+    }
+    .details {
+        font-size: 0.8rem;
+    }
+}
