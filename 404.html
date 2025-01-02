@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0;url=/VSC_LAB/" />
+  <script>
+    const pathname = window.location.pathname.replace("/VSC_LAB", "");
+    window.location.href = "/VSC_LAB" + pathname + window.location.search + window.location.hash;
+  </script>
 </head>
 <body>
-    <p>Redirecting...</p>
+  Redirecting...
 </body>
 </html>
