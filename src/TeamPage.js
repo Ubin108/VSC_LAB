@@ -169,7 +169,7 @@ const TeamPage = () => {
         },
         { 
             name: 'Jinho Park', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            img: process.env.PUBLIC_URL + '/team/JHP.jpeg',
             desc: '2025.03 - Present',
             email: 'seungtae@example.com', 
             scholar: '',
