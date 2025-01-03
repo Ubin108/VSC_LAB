@@ -175,6 +175,7 @@ const publications = [
             paper: "https://arxiv.org/abs/2311.13681",
             project: "https://maincold2.github.io/c3dgs/",
             code: "https://github.com/maincold2/Compact-3DGS",
+            talk: "https://www.youtube.com/watch?v=ooPSDSNikz4",
             thumbs: process.env.PUBLIC_URL + '/thumb/Compact3DGS.jpg'
         } 
     },
@@ -234,6 +235,100 @@ const publications = [
             thumbs: process.env.PUBLIC_URL + '/thumb/Hydra.jpg'
         } 
     },
+    { 
+        year: 2023, 
+        title: "Mip-Grid: Anti-aliased Grid Representations for Neural Radiance Fields", 
+        journal: "NeurIPS 2023", 
+        authors: "Seungtae Nam, Daniel Rho, Jong Hwan Ko, Eunbyung Park",
+        links: {
+            paper: "https://proceedings.neurips.cc/paper_files/paper/2023/file/082d3d795520c43214da5123e56a3a34-Paper-Conference.pdf",
+            project: "https://stnamjef.github.io/mipgrid.github.io/",
+            code: "https://github.com/stnamjef/MipGrid",
+            thumbs: process.env.PUBLIC_URL + '/thumb/Mip-Grid.jpg'
+        } 
+    },
+    { 
+        year: 2023, 
+        title: "Separable Physics-Informed Neural Networks", 
+        journal: "NeurIPS 2023 Spotlight (acceptance rate = 3.06%)", 
+        authors: "Junwoo Cho*, Seungtae Nam*, Hyunmo Yang, Seok-Bae Yun, Youngjoon Hong, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2306.15969",
+            project: "https://jwcho5576.github.io/spinn.github.io/",
+            code: "https://github.com/stnamjef/SPINN",
+            talk: "https://www.youtube.com/watch?t=4759&v=S-b26O2OWhI&feature=youtu.be",
+            thumbs: process.env.PUBLIC_URL + '/thumb/SPINN.jpg'
+        } 
+    },
+    { 
+        year: 2023, 
+        title: "FFNeRV: Flow-Guided Frame-Wise Neural Representations for Videos", 
+        journal: "ACM MM 2023", 
+        authors: "Joo Chan Lee, Daniel Rho, Jong Hwan Ko, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2212.12294",
+            project: "https://maincold2.github.io/ffnerv/",
+            code: "https://github.com/maincold2/FFNeRV",
+            thumbs: process.env.PUBLIC_URL + '/thumb/FFNeRV.jpg'
+        } 
+    },
+    { 
+        year: 2023, 
+        title: "Masked Wavelet Representation for Compact Neural Radiance Fields", 
+        journal: "CVPR 2023", 
+        authors: "Daniel Rho*, Byeonghyeon Lee*, Seungtae Nam, Joo Chan Lee, Jong Hwan Ko, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2212.09069",
+            project: "https://daniel03c1.github.io/masked_wavelet_nerf/",
+            code: "https://github.com/daniel03c1/masked_wavelet_nerf",
+            thumbs: process.env.PUBLIC_URL + '/thumb/MaskedWavelet.jpg'
+        } 
+    },
+    { 
+        year: 2023, 
+        title: "SMPConv: Self-Moving Point Representations for Continuous Convolution", 
+        journal: "CVPR 2023", 
+        authors: "Sanghyeon Kim, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2304.02330",
+            code: "https://github.com/sangnekim/SMPConv",
+            thumbs: process.env.PUBLIC_URL + '/thumb/SMPConv.jpg'
+        } 
+    },
+    { 
+        year: 2023, 
+        title: "PIXEL: Physics-Informed Cell Representations for Fast and Accurate PDE Solvers", 
+        journal: "AAAI 2023 / NeurIPS 2022 Workshop Spotlight", 
+        authors: "Namgyu Kang, Byeonghyeon Lee, Youngjoon Hong, Seok-Bae Yun, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2207.12800",
+            project: "https://namgyukang.github.io/PIXEL/",
+            code: "https://github.com/NamGyuKang/PIXEL",
+            thumbs: process.env.PUBLIC_URL + '/thumb/PIXEL.jpg'
+        } 
+    },
+    { 
+        year: 2022, 
+        title: "Streamable Neural Fields", 
+        journal: "ECCV 2022", 
+        authors: "Junwoo Cho*, Seungtae Nam*, Daniel Rho, Jong Hwan Ko, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2207.09663",
+            code: "https://github.com/jwcho5576/streamable_nf",
+            thumbs: process.env.PUBLIC_URL + '/thumb/SNF.jpg'
+        } 
+    },
+    { 
+        year: 2022, 
+        title: "Neural Residual Flow Fields for Efficient Video Representations", 
+        journal: "ACCV 2022", 
+        authors: "Daniel Rho, Junwoo Cho, Jong Hwan Ko, Eunbyung Park",
+        links: {
+            paper: "https://arxiv.org/abs/2201.04329",
+            code: "https://github.com/daniel03c1/eff_video_representation",
+            thumbs: process.env.PUBLIC_URL + '/thumb/NRFF.jpg'
+        } 
+    },
 ];
 
 const groupedPublications = publications.reduce((acc, pub) => {
@@ -244,7 +339,7 @@ const groupedPublications = publications.reduce((acc, pub) => {
 
 const PublicationPage = () => {
     const highlightKeywords = (text) => {
-        const keywords = ["Highlight", "Spotlight", "Oral"];
+        const keywords = ["Highlight", "Spotlight", "Oral", "Best Paper Candidates"];
         const parts = text.split(new RegExp(`(${keywords.join("|")})`, "g"));
         return parts.map((part, index) => {
             if (keywords.includes(part)) {
@@ -340,6 +435,20 @@ const PublicationPage = () => {
                                                             rel="noopener noreferrer"
                                                         >
                                                             Code
+                                                        </a>
+                                                    ))}
+                                                {pub.links?.talk &&
+                                                    (pub.links.talk === "Talk (Korean)" ? (
+                                                        <span>
+                                                            <strong>Talk (Korean)</strong>
+                                                        </span>
+                                                    ) : (
+                                                        <a
+                                                            href={pub.links.talk}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                        >
+                                                            Talk
                                                         </a>
                                                     ))}
                                             </div>

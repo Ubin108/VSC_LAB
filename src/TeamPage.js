@@ -54,8 +54,8 @@ const TeamPage = () => {
         },        
         { 
             name: 'Junyu Zhang', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg',
-            desc: '2021.09 - Present',
+            img: process.env.PUBLIC_URL + '/team/JYJ.JPG',
+            desc: '2023.09 - Present',
             email: 'zhangjunyu@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=3jrCsVoAAAAJ',
             github: 'https://github.com/BestJunYu'  
