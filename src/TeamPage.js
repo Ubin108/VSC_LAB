@@ -58,7 +58,7 @@ const TeamPage = () => {
             desc: '2021.09 - Present',
             email: 'seungtae@example.com', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=3jrCsVoAAAAJ',
-            github: ''  
+            github: 'https://github.com/BestJunYu'  
         },
         { 
             name: 'Younghyun Kim', 
@@ -71,22 +71,6 @@ const TeamPage = () => {
     ];
 
     const masterStudents = [
-        { 
-            name: 'Dohyun Kim', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg',
-            desc: '2023.03 - Present',
-            email: 'seungtae@example.com', 
-            scholar: '',
-            github: 'https://github.com/unhyop'  
-        },
-        { 
-            name: 'Geunmin Hwang', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg',
-            desc: '2023.03 - Present',
-            email: 'seungtae@example.com', 
-            scholar: '',
-            github: 'https://github.com/GeunminHwang'  
-        },
         { 
             name: 'Seungjun Oh', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
@@ -229,7 +213,7 @@ const TeamPage = () => {
         { 
             name: 'Seungtae Nam',
             desc: 'MS, 2022.03 - 2024.02', 
-            current: 'PhD student at VSC Lab, SKKU'
+            current: 'PhD student at VSC Lab, Yonsei'
         },
         { 
             name: 'Hyunmo Yang', 
@@ -239,12 +223,12 @@ const TeamPage = () => {
         { 
             name: 'Namgyu Kang', 
             desc: 'MS, 2022.03 - 2024.08',
-            current: 'PhD student at VSC Lab, SKKU'
+            current: 'PhD student at VSC Lab, Yonsei'
         },
         { 
             name: 'Byeonghyeon Lee', 
             desc: 'MS, 2022.09 - 2024.08', 
-            current: 'PhD student at VSC Lab, SKKU'
+            current: 'PhD student at VSC Lab, Yonsei'
         },
         { 
             name: 'Howoong Lee', 
@@ -255,6 +239,21 @@ const TeamPage = () => {
             name: 'Youngin Park', 
             desc: 'MS, 2023.03 - 2024.08 (Part-time Industrial Scholars Program)',
             current: 'Samsung Electronics'
+        },
+        { 
+            name: 'Younghyun Kim', 
+            desc: 'MS, 2023.03 - 2025.02',
+            current: 'PhD student at VSC Lab, Yonsei'
+        },
+        { 
+            name: 'Dohyun Kim', 
+            desc: 'MS, 2023.03 - 2025.02',
+            current: 'Samsung Electronics'
+        },
+        { 
+            name: 'Geunmin Hwang', 
+            desc: 'MS, 2023.03 - 2025.02',
+            current: ''
         }
     ];
 
