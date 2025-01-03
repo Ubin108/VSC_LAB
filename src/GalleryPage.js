@@ -1,7 +1,18 @@
 import React, { useState } from 'react';
 import './GalleryPage.css';
 
-const albums = [    
+const albums = [
+    {
+        year: 2024,
+        title: 'ACCV 2024 Oral Presentation',
+        description: '2024.12.10.',
+        images: [
+            { src: process.env.PUBLIC_URL + '/gallery/2024_accv_1.jpeg', alt: 'Album 1 - Image 1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_accv_2.jpeg', alt: 'Album 1 - Image 1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_accv_3.jpeg', alt: 'Album 1 - Image 1' },
+            { src: process.env.PUBLIC_URL + '/gallery/2024_accv_4.jpeg', alt: 'Album 1 - Image 1' },
+        ],
+    },    
     {
         year: 2024,
         title: 'JKAIA 2024',
