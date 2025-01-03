@@ -7,7 +7,7 @@ const TeamPage = () => {
             name: 'Joo Chan Lee', 
             img: process.env.PUBLIC_URL + '/team/JCL.png',
             desc: '2020.03 - Present',
-            email: 'joolee@example.com', 
+            email: 'maincold2@skku.edu', 
             homepage: 'https://maincold2.github.io/',
             scholar: 'https://scholar.google.com/citations?user=WKCHKk8AAAAJ&hl=en',
             github: 'https://github.com/maincold2' 
@@ -16,7 +16,7 @@ const TeamPage = () => {
             name: 'Younggeun Lee', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
             desc: '2021.09 - Present',
-            email: 'younglee@example.com', 
+            email: 'dudrms514@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=E4iEBFsAAAAJ',
             github: 'https://github.com/Younggeun-L' 
         },
@@ -24,7 +24,7 @@ const TeamPage = () => {
             name: 'Seungtae Nam', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
             desc: '2022.03 - Present',
-            email: 'seungtae@example.com', 
+            email: 'stnamjef@skku.edu', 
             scholar: 'https://scholar.google.com/citations?user=8NKPmmwCmrAC&hl=en',
             github: 'https://github.com/stnamjef'
         },
@@ -32,7 +32,7 @@ const TeamPage = () => {
             name: 'Xiangyu Sun', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
             desc: '2022.09 - Present',
-            email: 'seungtae@example.com', 
+            email: 'xiangyusun@skku.edu', 
             scholar: 'https://scholar.google.com/citations?user=VLzxTrAAAAAJ&hl=en',
             github: 'https://github.com/Xiangyu1Sun'  
         },
@@ -40,7 +40,7 @@ const TeamPage = () => {
             name: 'Namgyu Kang', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg', 
             desc: '2022.03 - Present',
-            email: 'seungtae@example.com', 
+            email: 'kangnamgyu27@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=yb9y9k8AAAAJ',
             github: 'https://github.com/NamGyuKang' 
         },
@@ -48,7 +48,7 @@ const TeamPage = () => {
             name: 'Byeonghyeon Lee', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg', 
             desc: '2022.09 - Present',
-            email: 'seungtae@example.com', 
+            email: 'leebh0102@skku.edu', 
             scholar: 'https://scholar.google.com/citations?user=_PhPccYAAAAJ&hl=en',
             github: 'https://github.com/benhenryL' 
         },        
@@ -56,7 +56,7 @@ const TeamPage = () => {
             name: 'Junyu Zhang', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
             desc: '2021.09 - Present',
-            email: 'seungtae@example.com', 
+            email: 'zhangjunyu@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=3jrCsVoAAAAJ',
             github: 'https://github.com/BestJunYu'  
         },
@@ -64,7 +64,7 @@ const TeamPage = () => {
             name: 'Younghyun Kim', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
             desc: '2023.03 - Present',
-            email: 'seungtae@example.com', 
+            email: 'yhyun225@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=4M-6X7MAAAAJ',
             github: 'https://github.com/yhyun225'  
         },
@@ -75,7 +75,7 @@ const TeamPage = () => {
             name: 'Seungjun Oh', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
             desc: '2023.09 - Present',
-            email: 'seungtae@example.com', 
+            email: 'asxc1324@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=HMnjBk0AAAAJ',
             github: 'https://github.com/ohsngjun'  
         },
@@ -83,7 +83,7 @@ const TeamPage = () => {
             name: 'Gyeongjin Kang', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
             desc: '2024.03 - Present', 
-            email: 'seungtae@example.com', 
+            email: 'ggggjin99@skku.edu', 
             scholar: 'https://scholar.google.com/citations?user=iyQ16vIAAAAJ&hl=en',
             github: 'https://github.com/Gynjn' 
         },
@@ -91,7 +91,7 @@ const TeamPage = () => {
             name: 'Dongheok Park', 
             img: process.env.PUBLIC_URL + '/team/DHP.jpg',
             desc: '2024.03 - Present',
-            email: 'seungtae@example.com', 
+            email: 'leao8869@skku.edu', 
             scholar: 'https://scholar.google.com/citations?user=UUtpFKgAAAAJ&hl=ko&oi=ao',
             github: 'https://github.com/DHPark98'  
         },
@@ -99,7 +99,7 @@ const TeamPage = () => {
             name: 'Hyun-kyu Ko', 
             img: process.env.PUBLIC_URL + '/team/HKK.jpeg',
             desc: '2024.03 - Present',
-            email: 'seungtae@example.com', 
+            email: 'laniko@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=ko&user=lsi-8-QAAAAJ',
             github: 'https://github.com/Ko-Lani'  
         },
@@ -107,7 +107,7 @@ const TeamPage = () => {
             name: 'Jisang Yoo', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
             desc: '2024.03 - Present',
-            email: 'seungtae@example.com', 
+            email: 'jisang1528@skku.edu', 
             scholar: '',
             github: 'https://github.com/Yoo-jisang'  
         },
@@ -115,7 +115,7 @@ const TeamPage = () => {
             name: 'Hye Jin Jeon', 
             img: process.env.PUBLIC_URL + '/team/temp2.jpg',
             desc: '2024.03 - Present',
-            email: 'seungtae@example.com', 
+            email: 'hyejin9877@skku.edu', 
             scholar: '',
             github: 'https://github.com/jeonhhyejin'  
         },
@@ -131,7 +131,7 @@ const TeamPage = () => {
             name: 'Ji Hyeon Park', 
             img: process.env.PUBLIC_URL + '/team/temp2.jpg',
             desc: '2024.09 - Present',
-            email: 'seungtae@example.com', 
+            email: 'fairytale@skku.edu', 
             scholar: '',
             github: 'https://github.com/Kanadae'  
         },
@@ -139,7 +139,7 @@ const TeamPage = () => {
             name: 'Seungryong Lee', 
             img: process.env.PUBLIC_URL + '/team/temp.jpg',
             desc: '2024.09 - Present',
-            email: 'seungtae@example.com', 
+            email: 'leejicb@skku.edu', 
             scholar: '',
             github: 'https://github.com/lms20031'  
         },
@@ -147,7 +147,7 @@ const TeamPage = () => {
             name: 'Eunsoo Lee', 
             img: process.env.PUBLIC_URL + '/team/temp2.jpg',
             desc: '2024.09 - Present',
-            email: 'seungtae@example.com', 
+            email: 'osoo0628@skku.edu', 
             scholar: '',
             github: 'https://github.com/esleeo'  
         },
@@ -155,7 +155,7 @@ const TeamPage = () => {
             name: 'Jinho Park', 
             img: process.env.PUBLIC_URL + '/team/JHP.jpeg',
             desc: '2025.03 - Present',
-            email: 'seungtae@example.com', 
+            email: 'jinho99@.skku.edu', 
             scholar: '',
             github: 'https://github.com/zinosii'
         },
@@ -163,7 +163,7 @@ const TeamPage = () => {
             name: 'Seungkwon Yang', 
             img: process.env.PUBLIC_URL + '/team/SGY.jpg',
             desc: '2025.03 - Present',
-            email: 'seungtae@example.com', 
+            email: 'hkjo0908@skku.edu', 
             scholar: '',
             github: 'https://github.com/yang-gwon2'
         },
@@ -172,15 +172,24 @@ const TeamPage = () => {
     const undergraduateStudents = [
         { 
             name: 'Hyunsu Kim', 
-            img: process.env.PUBLIC_URL + '/team/temp2.jpg' 
+            img: process.env.PUBLIC_URL + '/team/temp2.jpg',
+            email: 'hyunsu517@skku.edu', 
+            scholar: '',
+            github: 'https://github.com/m00yu'   
         },
         { 
             name: 'Woojeong Baek', 
-            img: process.env.PUBLIC_URL + '/team/temp2.jpg' 
+            img: process.env.PUBLIC_URL + '/team/temp2.jpg',
+            email: 'bwj2800@skku.edu', 
+            scholar: '',
+            github: 'https://github.com/bwj2800'   
         },
         { 
             name: 'Minseo Lee', 
-            img: process.env.PUBLIC_URL + '/team/temp2.jpg' 
+            img: process.env.PUBLIC_URL + '/team/temp2.jpg',
+            email: 'lms20031@skku.edu', 
+            scholar: '',
+            github: 'https://github.com/lms20031'   
         },
     ];
 
