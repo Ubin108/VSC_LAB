@@ -38,7 +38,7 @@ const TeamPage = () => {
         },
         { 
             name: 'Namgyu Kang', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg', 
+            img: process.env.PUBLIC_URL + '/team/NGK.jpg', 
             desc: '2022.03 - Present',
             email: 'kangnamgyu27@skku.edu', 
             scholar: 'https://scholar.google.com/citations?hl=en&user=yb9y9k8AAAAJ',
@@ -105,7 +105,7 @@ const TeamPage = () => {
         },
         { 
             name: 'Jisang Yoo', 
-            img: process.env.PUBLIC_URL + '/team/temp.jpg',
+            img: process.env.PUBLIC_URL + '/team/JSYYY.jpg',
             desc: '2024.03 - Present',
             email: 'jisang1528@skku.edu', 
             scholar: '',
