@@ -161,7 +161,7 @@ const TeamPage = () => {
         },
         { 
             name: 'Seungkwon Yang', 
-            img: process.env.PUBLIC_URL + '/team/SGY.jpg',
+            img: process.env.PUBLIC_URL + '/team/SKY.jpg',
             desc: '2025.03 - Present',
             email: 'hkjo0908@skku.edu', 
             scholar: '',

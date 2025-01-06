@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link, Navigate } from 'react-ro
 import TeamPage from './TeamPage';
 import PublicationPage from './PublicationPage';
 import GalleryPage from './GalleryPage';
+import ContactPage from './ContactPage';
 import './App.css';
 
 const App = () => {
@@ -218,6 +219,7 @@ const App = () => {
                     <Route path="/team" element={<TeamPage />} />
                     <Route path="/publication" element={<PublicationPage />} />
                     <Route path="/gallery" element={<GalleryPage />} />
+                    <Route path="/contact" element={<ContactPage />} />
                     <Route path="*" element={<Navigate to="/" />} /> {}
                 </Routes>
 
