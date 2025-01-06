@@ -105,7 +105,7 @@ const TeamPage = () => {
         },
         { 
             name: 'Jisang Yoo', 
-            img: process.env.PUBLIC_URL + '/team/JSYYY.jpg',
+            img: process.env.PUBLIC_URL + '/team/JSY.jpg',
             desc: '2024.03 - Present',
             email: 'jisang1528@skku.edu', 
             scholar: '',
