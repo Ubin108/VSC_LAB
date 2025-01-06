@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/VSC_LAB/static/css/main.3dc47d33.css",
-    "main.js": "/VSC_LAB/static/js/main.f22ee162.js",
+    "main.css": "/VSC_LAB/static/css/main.eed80386.css",
+    "main.js": "/VSC_LAB/static/js/main.bc5efbdb.js",
     "static/js/453.cb05b65a.chunk.js": "/VSC_LAB/static/js/453.cb05b65a.chunk.js",
     "index.html": "/VSC_LAB/index.html",
-    "main.3dc47d33.css.map": "/VSC_LAB/static/css/main.3dc47d33.css.map",
-    "main.f22ee162.js.map": "/VSC_LAB/static/js/main.f22ee162.js.map",
+    "main.eed80386.css.map": "/VSC_LAB/static/css/main.eed80386.css.map",
+    "main.bc5efbdb.js.map": "/VSC_LAB/static/js/main.bc5efbdb.js.map",
     "453.cb05b65a.chunk.js.map": "/VSC_LAB/static/js/453.cb05b65a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3dc47d33.css",
-    "static/js/main.f22ee162.js"
+    "static/css/main.eed80386.css",
+    "static/js/main.bc5efbdb.js"
   ]
 }
